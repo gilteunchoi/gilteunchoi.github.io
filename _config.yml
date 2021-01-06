@@ -97,13 +97,13 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "부산대학교 정보컴퓨터공학부"
   location         : "인천광역시, 남동구"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/gilteunchoi"
+  links:    
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:gilteunchoi@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gilteunchoi"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/gilteun/"
