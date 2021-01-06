@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "최길튼"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/bio-photo.jpg"
   bio              : "부산대학교 정보컴퓨터공학부"
   location         : "인천광역시, 남동구"
   email            : "gilteunchoi@gmail.com"
