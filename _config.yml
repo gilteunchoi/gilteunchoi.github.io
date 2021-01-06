@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "상-록 콤퓨타"
+title                    : "8비트 다락방"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "학생 개발자의 기술 블로그입니다"
 name                     : "Gilteun Choi"
-description              : "학생 개발자의 기술 블로그입니다"
+description              : "8비트 다락방은 학생 개발자의 기술 블로그입니다 "
 url                      : "https://gilteunchoi.github.io"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
