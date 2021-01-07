@@ -44,18 +44,18 @@ Off-premise 시스템은 (AWS와 같은)클라우드 컴퓨팅 서비스의 제�
 
 인프라 제공 서비스
 
-AWS의 Elastic Compute Cloud와 같은 IaaS는 사용자에서 운영체제부터 그 상위 계층의 인프라를 관리할 수 있는 권한을 제공한다.
+AWS의 [Elastic Compute Cloud](https://aws.amazon.com/ko/ec2)와 같은 IaaS는 사용자에서 운영체제부터 그 상위 계층의 인프라를 관리할 수 있는 권한을 제공한다.
 가장 많은 부분을 변경 할 수 있는 많큼 자유도가 가장 높지만 신경써야 할 부분이 많다.
 
 ## PaaS (Platform as a Service)
 
 플랫폼 제공 서비스
 
-AWS의 Lambda와 같은 PaaS는 사용자에게 데이터와 어플리케이션의 관리 권한만을 제공한다.
+AWS의 [Lambda](https://aws.amazon.com/ko/lambda)와 같은 PaaS는 사용자에게 데이터와 어플리케이션의 관리 권한만을 제공한다.
 사용자가 어플리케이션에 집중할 수 있는 환경을 제공한다.
 
 ## SaaS (Software as a Service)
 
 소프트웨어 제공 서비스
 
-AWS의 Marketplace와 같은 SaaS는 사용자에게 어떠한 권한도 주지 않은 채로, 소프트웨어와 그 기반 시설 전체를 제공하는 것이다.
+AWS의 [Marketplace](https://aws.amazon.com/marketplace)와 같은 SaaS는 사용자에게 어떠한 권한도 주지 않은 채로, 소프트웨어와 그 기반 시설 전체를 제공하는 것이다.
