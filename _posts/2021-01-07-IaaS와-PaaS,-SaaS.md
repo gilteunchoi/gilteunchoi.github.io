@@ -5,7 +5,8 @@ categories: AWS
 ---
 
 Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 작성하는 포스트입니다.
-***
+
+*****
 
 [Amazon Web Serviecs 개요](https://d1.awsstatic.com/International/ko_KR/whitepapers/aws-overview.pdf)에 등장하는 IaaS와 PaaS, SaaS는 AWS가 제공하는 세 가지 클라우드 컴퓨팅 서비스 모델이다. 이 포스트에서는 이와 함께 On-premise, Off-premise의 개념도 확인한다.
 
