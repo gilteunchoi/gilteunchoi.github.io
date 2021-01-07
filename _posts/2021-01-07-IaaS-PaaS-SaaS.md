@@ -1,6 +1,8 @@
 ---
 title: "IaaS, PaaS, SaaS"
 date: 2021-01-07 18:04:10 +0900
+toc: true
+toc_sticky: true
 categories: AWS
 ---
 
@@ -38,21 +40,21 @@ Off-premise 시스템은 (AWS와 같은)클라우드 컴퓨팅 서비스의 제�
 
 >*O는 사용자가 직접 관리해야 하는 부분을, X는 제공자가 관리하는 부분을 나타낸다*
 
-## Infastructure as a Service (IaaS)
+## IaaS (Infastructure as a Service)
 
 인프라 제공 서비스
 
 AWS의 Elastic Compute Cloud와 같은 IaaS는 사용자에서 운영체제부터 그 상위 계층의 인프라를 관리할 수 있는 권한을 제공한다.
 가장 많은 부분을 변경 할 수 있는 많큼 자유도가 가장 높지만 신경써야 할 부분이 많다.
 
-## Platform as a Service (PaaS)
+## PaaS (Platform as a Service)
 
 플랫폼 제공 서비스
 
 AWS의 Lambda와 같은 PaaS는 사용자에게 데이터와 어플리케이션의 관리 권한만을 제공한다.
 사용자가 어플리케이션에 집중할 수 있는 환경을 제공한다.
 
-## Software as a Service (SaaS)
+## SaaS (Software as a Service)
 
 소프트웨어 제공 서비스
 
