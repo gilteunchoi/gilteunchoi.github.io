@@ -15,11 +15,9 @@ Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 
 
 영어 공부도 할 겸 직접 의역을 했기에, 틀린 내용이 있다면 양해를 바란다. 개인정보가 나오는 부분은 지웠다.
 
-# 내용
+# 영어 원본
 
-## 영어 원본
-
-### [Action Required] Amazon S3 and Amazon CloudFront migrating default certificates to Amazon Trust Services starting March 23, 2021.
+## [Action Required] Amazon S3 and Amazon CloudFront migrating default certificates to Amazon Trust Services starting March 23, 2021.
 
 You are receiving this message because your account has been identified as having used Amazon Simple Storage Service (S3)
 and/or Amazon CloudFront within the past 6 months. This message is a reminder of the upcoming migration of both services’
@@ -38,9 +36,9 @@ migrated. Visit [https://www.amazontrust.com/repository/](https://www.amazontrus
 
 (중략)
 
-#### Frequently Asked Questions
+### Frequently Asked Questions
 
-##### Q1: What is changing?
+#### Q1: What is changing?
 
 The Certificate Authority for Amazon S3 and Amazon CloudFront’s default certificates are changing from DigiCert to Amazon
 Trust Services. This change does not impact workloads that use HTTP only or use a custom TLS certificate. For S3, many
@@ -48,11 +46,11 @@ regions already use Amazon Trust Services including all regional endpoints for t
 northeast-3, ap-east-1, and us-gov-east-1 regions. S3 will be migrating the remaining AWS Regions to Amazon Trust Services
 as well. For CloudFront, all edge location endpoints will be migrating to Amazon Trust Services.
  
-##### Q2: When are these changes occurring?
+#### Q2: When are these changes occurring?
 
 The changes in Certificate Authority will begin rolling out on March 23, 2021.
 
-##### Q3: What do I need to do?
+#### Q3: What do I need to do?
 
 Check your client certificate trust store to see if it already trusts Amazon Trust Services’ root certificates. If it does no further
 action is needed. If it does not trust Amazon Trust Services, perform one of the following actions. Resolution option 1, update
@@ -60,7 +58,7 @@ your client certificate trust store to include all of Amazon Trust Services’ r
 domain name your application requests to a CloudFront Alternative Domain Name (CNAME) that uses an TLS certificate from
 an already trusted Certificate Authority.
 
-##### Q4: How do I test if my application trust Amazon Trust Services?
+#### Q4: How do I test if my application trust Amazon Trust Services?
 
 You can verify your application trusts Amazon Trust Services by performing one of the following tests from within your
 application. Test option 1, fetch the object https://s3-ats-migration-test.s3.eu-west-3.amazonaws.com/test.jpg and verify a
@@ -68,22 +66,22 @@ application. Test option 1, fetch the object https://s3-ats-migration-test.s3.eu
 in any of the following regions (eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1) and fetch a
 test object over HTTPS.
 
-##### Q5: What root certificates are part of Amazon Trust Services?
+#### Q5: What root certificates are part of Amazon Trust Services?
 
 Refer to https://www.amazontrust.com/repository/
 
-##### Q6: What happens after March 23, 2021 if my clients do not trust Amazon Trust Services’ Certificate Authorities?
+#### Q6: What happens after March 23, 2021 if my clients do not trust Amazon Trust Services’ Certificate Authorities?
 
 All client HTTPS requests made to a default Amazon S3 or Amazon CloudFront endpoint will receive the services’ default
 certificate issued from Amazon Trust Services. If the client trust store does not trust the Certificate Authority, it will report
 the TLS certificate as “untrusted” and may close the connection.
 
-Sincerely,
+Sincerely,</br>
 Amazon Web Services
 
-## 번역본
+# 번역본
 
-### [조치 필요함] Amazon Simple Storage Service와 Amazon CloudFront의 기본 인증서를 Amazon Trust Service로 이식하는 작업이 21년 3월 23일 시작됩니다.
+## [조치 필요함] Amazon Simple Storage Service와 Amazon CloudFront의 기본 인증서를 Amazon Trust Service로 이식하는 작업이 21년 3월 23일 시작됩니다.
 
 본 메일은 6개월 내에 Amazon S3 또는 Amazon CloudFront를 사용한 유저에게 발송되었습니다. 
 이 메일은 2021년 3월 23일에 진행되는 다가오는 두 서비스의 기본 인증서를 Amazon Trust Services로 이식하는 작업을 미리 알려드리고자 전송되었습니다.
@@ -99,47 +97,46 @@ Amazon S3와 CloudFront는 두 기본 인증서의 CA를 ATS로 변경합니다.
 
 (중략)
 
-#### 자주 물어보는 질문들
+### 자주 물어보는 질문들
 
-##### Q1: 무엇이 바뀌는 건가요?
+#### Q1: 무엇이 바뀌는 건가요?
 
 Amazon S3와 CloudFront의 기본 인증서 CA가 DigiCert에서 ATS로 변경되었습니다. 이 변경은 HTTP통신을 진행하거나 사용자 정의 TLS 인증서를 사용하는 경우에는 영형을 주지 않습니다.
 S3의 경우에는 eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1 region의 엔드포인트를 포함한 많은 region이 이미 ATS를 사용하고 있습니다. 
 따라서 S3는 나머지 AWS region을 ATS로 이식하고자 합니다. CloudFront의 경우에는 모든 edge location 엔드포인트가 ATS로 이식됩니다.
 
-##### Q2: 언제 이런 변화가 일어날까요?
+#### Q2: 언제 이런 변화가 일어날까요?
 
 이러한 CA의 변화는 2021년 3월 23일부터 시작될 것입니다.
 
-##### Q3: 무엇을 해야 하나요?
+#### Q3: 무엇을 해야 하나요?
 
 귀하의 client trust store를 확인하여 ATS의 루트 인증서를 이미 신뢰하고 있는지 확인해야 합니다. 이미 이를 신뢰하고 있다면 다른 조치는 필요하지 않습니다. 
 그러나 이를 신뢰하고 있지 않다면 다음 중 하나의 조치를 취하십시오. 
   
-> 해결책 1: 귀하의 클라이언트 certificate trust store를 업데이트하여 모든 ATS의 루트 인증서가 포함되도록 하십시오.
+해결책 1: 귀하의 클라이언트 certificate trust store를 업데이트하여 모든 ATS의 루트 인증서가 포함되도록 하십시오.
   
-> 해결책 2: (이해하지 못함)
+해결책 2: (이해하지 못함)
 
-##### Q4: 어떻게 내 어플리케이션이 ATS를 신뢰하는지 테스트하나요?
+#### Q4: 어떻게 내 어플리케이션이 ATS를 신뢰하는지 테스트하나요?
 
 다음 중 하나의 테스트를 수행하여 어플리케이션이 ATS를 신뢰하는지 확인할 수 있습니다. 
 
-> 테스트 1: 오브젝트 [https://s3-ats-migration-test.s3.eu-west-3.amazonaws.com/test.jpg](https://s3-ats-migration-test.s3.eu-west-3.amazonaws.com/test.jpg)를 fetch하여 
-  HTTP 상태 코드 200을 반환하는지 확인하거나, 이미지에서 초록색 체크 마크가 나오는지 확인하세요.
+테스트 1: 오브젝트 [https://s3-ats-migration-test.s3.eu-west-3.amazonaws.com/test.jpg](https://s3-ats-migration-test.s3.eu-west-3.amazonaws.com/test.jpg)를 fetch하여 
+HTTP 상태 코드 200을 반환하는지 확인하거나, 이미지에서 초록색 체크 마크가 나오는지 확인하세요.
 
-> 테스트 2: 다음 리전 중 한곳에 S3 버킷을 만들고 테스트 오브젝트를 HTTPS를 통해 fetch 하십시오. 
-  (eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1)
+테스트 2: 다음 리전 중 한곳에 S3 버킷을 만들고 테스트 오브젝트를 HTTPS를 통해 fetch 하십시오. (eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1)
 
-##### Q5: 어떤 루트 인증서가 ATS안에 속해 있나요?
+#### Q5: 어떤 루트 인증서가 ATS안에 속해 있나요?
 
 [https://www.amazontrust.com/repository/](https://www.amazontrust.com/repository/) 해당 링크를 참조하세요.
 
-##### Q6: 2021년 3월 23일 이후에 내 클라이언트가 ATS의 CA를 신뢰하지 못하면 어떤 일이 일어나나요?
+#### Q6: 2021년 3월 23일 이후에 내 클라이언트가 ATS의 CA를 신뢰하지 못하면 어떤 일이 일어나나요?
 
 기본 Amazon S3 또는 Amazon CloudFront 엔드포인트에 대해 수행된 모든 클라이언트 HTTPS 요청에는 Amazon Trust Services에서 발급된 서비스의 기본 인증서가 수신됩니다. 
 귀하의 client trust  store가 CA를 신뢰하지 않으면 해당 TLS 증명서를 "신뢰 할 수 없음"으로 보고하고 연결을 종료할 수 있습니다.
 
-진심을 담아서,
+진심을 담아서,</br>
 Amazon Web Services
 
 # 요약
