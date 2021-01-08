@@ -142,6 +142,7 @@ Amazon Web Services
 # 요약
 
 Amazon Web Serice는 2018년 부터 전반적인 서비스들의 TLS 인증서 발급 기관을 자체적으로 운영하기 위해 Amazon Trust Service를 만들어 인증서들을 이곳으로 이식하고 있다.
-(기존에는 DigiCert에서 발급받은 인증서를 사용하고 있었다) 따러서 새로운 Certificate Authority가 발급한 인증서를 사용하기 위해 사용자의 클라이언트 certificate trust store를 업데이트 하라는 것이다.
+(기존에는 DigiCert에서 발급받은 인증서를 사용하고 있었다)
+따라서 새로운 Certificate Authority가 발급한 인증서를 사용하기 위해 사용자의 클라이언트 certificate trust store를 업데이트 하라는 것이다.
 
 내 AWS 계정에서는 TLS 통신을 사용하는 어플리케이션을 운영하고 있지 않으므로, 무서운 [조치 필요함] 말머리와는 다르게 한숨 돌려도 될 것 같다.
