@@ -127,6 +127,8 @@ HTTP 상태 코드 200을 반환하는지 확인하거나, 이미지에서 초�
 
 테스트 2: 다음 리전 중 한곳에 S3 버킷을 만들고 테스트 오브젝트를 HTTPS를 통해 fetch 하십시오. (eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1)
 
+> (eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1)는 이미 ATS가 발급하는 인증서로 변경된 리전들이다.
+
 #### Q5: 어떤 루트 인증서가 ATS안에 속해 있나요?
 
 [https://www.amazontrust.com/repository/](https://www.amazontrust.com/repository/) 해당 링크를 참조하세요.
