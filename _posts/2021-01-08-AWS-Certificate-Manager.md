@@ -90,3 +90,7 @@ the TLS certificate as “untrusted” and may close the connection.
 
 Sincerely,
 Amazon Web Services
+
+# AWS Certificate Manager
+
+## Amazon Trust Service
