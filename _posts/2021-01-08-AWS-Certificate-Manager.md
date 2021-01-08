@@ -62,19 +62,31 @@ regions already use Amazon Trust Services including all regional endpoints for t
 northeast-3, ap-east-1, and us-gov-east-1 regions. S3 will be migrating the remaining AWS Regions to Amazon Trust Services
 as well. For CloudFront, all edge location endpoints will be migrating to Amazon Trust Services.
 
-> 
-
+> Amazon S3와 CloudFront의 기본 인증서 CA가 DigiCert에서 ATS로 변경되었습니다. 이 변경은 HTTP통신을 진행하거나 사용자 정의 TLS 인증서를 사용하는 경우에는 영형을 주지 않습니다.
+  S3의 경우에는 eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1 region의 엔드포인트를 포함한 많은 region이 이미 ATS를 사용하고 있습니다. 
+  따라서 S3는 나머지 AWS region을 ATS로 이식하고자 합니다. CloudFront의 경우에는 모든 edge location 엔드포인트가 ATS로 이식됩니다.
+ 
 #### Q2: When are these changes occurring?
+
+> 언제 이런 변화가 일어날까요?
 
 The changes in Certificate Authority will begin rolling out on March 23, 2021.
 
+> 이러한 CA의 변화는 2021년 3월 23일부터 시작될 것입니다.
+
 #### Q3: What do I need to do?
+
+> 무엇을 해야 하나요?
 
 Check your client certificate trust store to see if it already trusts Amazon Trust Services’ root certificates. If it does no further
 action is needed. If it does not trust Amazon Trust Services, perform one of the following actions. Resolution option 1, update
 your client certificate trust store to include all of Amazon Trust Services’ root certificates. Resolution option 2, change the
 domain name your application requests to a CloudFront Alternative Domain Name (CNAME) that uses an TLS certificate from
 an already trusted Certificate Authority.
+
+> 귀하의 client trust store를 확인하여 ATS의 루트 인증서를 이미 신뢰하고 있는지 확인해야 합니다. 이미 이를 신뢰하고 있다면 다른 조치는 필요하지 않습니다.
+  그러나 이를 신뢰하고 있지 않다면 다음 중 하나의 조치를 취하십시오. 해결책 1: 귀하의 클라이언트 certificate trust store를 업데이트하여 모든 ATS의 루트 인증서가 포함되도록 하십시오.
+  해결책 2: 귀하의 어 (중간 저장)
 
 #### Q4: How do I test if my application trust Amazon Trust Services?
 
@@ -96,3 +108,10 @@ the TLS certificate as “untrusted” and may close the connection.
 
 Sincerely,
 Amazon Web Services
+
+# 요약
+
+AWS는 지금 전반적인 서비스들의 TLS 인증 기관을 자체적으로 운영하기 위해 기존에 사용하던 DigiCert를 버리고 ATS를 만들고 인증서들을 이곳으로 이식하고 있다.
+새 CA가 발급한 인증서이므로 사용자의 클라이언트 certificate trust store를 업데이트 하라는 것이다.
+
+내 AWS 계정에서는 TLS 통신을 사용하는 어플리케이션을 운영하고 있지 않으므로, 무서운 [조치 필요함] 말머리와는 다르게 한숨 돌려도 될 것 같다.
