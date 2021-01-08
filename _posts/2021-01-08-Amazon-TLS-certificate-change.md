@@ -77,7 +77,6 @@ certificate issued from Amazon Trust Services. If the client trust store does no
 the TLS certificate as “untrusted” and may close the connection.
 
 Sincerely,
-
 Amazon Web Services
 
 # 번역본
@@ -138,7 +137,6 @@ HTTP 상태 코드 200을 반환하는지 확인하거나, 이미지에서 초�
 귀하의 client trust  store가 CA를 신뢰하지 않으면 해당 TLS 증명서를 "신뢰 할 수 없음"으로 보고하고 연결을 종료할 수 있습니다.
 
 진심을 담아서,
-
 Amazon Web Services
 
 # 요약
