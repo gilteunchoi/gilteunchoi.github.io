@@ -17,7 +17,7 @@ Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 
 
 # 메일 전문
 
- ## [Action Required] Amazon S3 and Amazon CloudFront migrating default certificates to Amazon Trust Services starting March 23, 2021.
+## [Action Required] Amazon S3 and Amazon CloudFront migrating default certificates to Amazon Trust Services starting March 23, 2021.
 
 > [조치 필요함] Amazon Simple Storage Service와 Amazon CloudFront의 기본 인증서를 Amazon Trust Service로 이식하는 작업이 21년 3월 23일 시작됩니다.
 
@@ -28,8 +28,9 @@ that you confirm that your applications trust Amazon Trust Services as a Certifi
 not trust the Certificate Authority, it will report the TLS certificate as “untrusted” and may close the connection.
 
 > 본 메일은 6개월 내에 Amazon S3 또는 Amazon CloudFront를 사용한 유저에게 발송되었습니다. 
-  이 메일은 21년 3월 23일에 진행되는 다가오는 양 서비스의 기본 인증서를 Amazon Trust Services로 이식하는 작업을 미리 알려드리고자 합니다.
-  ...임시저장...
+  이 메일은 2021년 3월 23일에 진행되는 다가오는 두 서비스의 기본 인증서를 Amazon Trust Services로 이식하는 작업을 미리 알려드리고자 전송되었습니다.
+  이 이식 작업을 미리 준비하기 위해, 우리는 귀하의 어플리케이션이 Amazon Trust Services를 CA(Certificate Authority)로써 신뢰하는 지 확인하는 것을 추천드립니다.
+  만약 귀하의 client trust store가 CA를 신뢰하지 않으면 해당 TLS 증명서를 "신뢰 할 수 없음"으로 보고하고 연결을 종료할 수 있습니다.
 
 In 2018, AWS announced a broad migration of AWS services’ TLS certificates to our own Certificate Authority, Amazon Trust
 Services (ATS). Consistent with this change, and beginning March 23rd 2021, Amazon S3 and Amazon CloudFront will begin
