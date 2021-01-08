@@ -60,15 +60,15 @@ an already trusted Certificate Authority.
 
 #### Q4: How do I test if my application trust Amazon Trust Services?
 
-You can verify your application trusts Amazon Trust Services by performing one of the following tests from within your
-application. Test option 1, fetch the object https://s3-ats-migration-test.s3.eu-west-3.amazonaws.com/test.jpg and verify a
-200 response or that you see the green check mark in the test image. Test option 2, create an S3 bucket in your AWS account
-in any of the following regions (eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1) and fetch a
-test object over HTTPS.
+You can verify your application trusts Amazon Trust Services by performing one of the following tests from within your application. 
+Test option 1, fetch the object [https://s3-ats-migration-test.s3.eu-west-3.amazonaws.com/test.jpg](https://s3-ats-migration-test.s3.eu-west-3.amazonaws.com/test.jpg) 
+and verify a 200 response or that you see the green check mark in the test image. 
+Test option 2, create an S3 bucket in your AWS account in any of the following regions (eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1) 
+and fetch a test object over HTTPS.
 
 #### Q5: What root certificates are part of Amazon Trust Services?
 
-Refer to https://www.amazontrust.com/repository/
+Refer to [https://www.amazontrust.com/repository/](https://www.amazontrust.com/repository/)
 
 #### Q6: What happens after March 23, 2021 if my clients do not trust Amazon Trust Services’ Certificate Authorities?
 
@@ -76,7 +76,8 @@ All client HTTPS requests made to a default Amazon S3 or Amazon CloudFront endpo
 certificate issued from Amazon Trust Services. If the client trust store does not trust the Certificate Authority, it will report
 the TLS certificate as “untrusted” and may close the connection.
 
-Sincerely,</br>
+Sincerely,
+
 Amazon Web Services
 
 # 번역본
@@ -136,7 +137,8 @@ HTTP 상태 코드 200을 반환하는지 확인하거나, 이미지에서 초�
 기본 Amazon S3 또는 Amazon CloudFront 엔드포인트에 대해 수행된 모든 클라이언트 HTTPS 요청에는 Amazon Trust Services에서 발급된 서비스의 기본 인증서가 수신됩니다. 
 귀하의 client trust  store가 CA를 신뢰하지 않으면 해당 TLS 증명서를 "신뢰 할 수 없음"으로 보고하고 연결을 종료할 수 있습니다.
 
-진심을 담아서,</br>
+진심을 담아서,
+
 Amazon Web Services
 
 # 요약
