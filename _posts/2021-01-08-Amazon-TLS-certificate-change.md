@@ -1,5 +1,5 @@
 ---
-title: "Amazon S3와 CloudFront의 TLS 인증서 변경"
+title: "Amazon S3와 CloudFront의 TLS 기본 인증서 이식"
 date: 2021-01-08 17:23:07 +0900
 toc: true
 toc_sticky: true
