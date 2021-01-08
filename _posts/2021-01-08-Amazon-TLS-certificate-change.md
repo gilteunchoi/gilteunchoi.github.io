@@ -1,5 +1,5 @@
 ---
-title: "AWS Certificate Manager"
+title: "Amazon S3와 CloudFront의 TLS 인증서 변경 안내 메일"
 date: 2021-01-08 17:23:07 +0900
 toc: true
 toc_sticky: true
