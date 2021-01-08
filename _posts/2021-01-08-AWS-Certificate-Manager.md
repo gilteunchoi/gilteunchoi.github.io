@@ -42,42 +42,48 @@ Authority, AWS can better manage the security practices used to handle the defau
 
 Your action may be required to ensure your applications continue normal operation after this change. If you already use
 other AWS services, your application most likely already trusts Amazon Trust Services as many AWS services have already
-migrated. Visit https://www.amazontrust.com/repository/ for more information about Amazon Trust Services. 
+migrated. Visit [https://www.amazontrust.com/repository/](https://www.amazontrust.com/repository/) for more information about Amazon Trust Services. 
 
-> 이러한 변화에서 귀하의 어플리케이션이 정상 작동함을 보장하기 위해서는 귀하의 조치가 필요합니다. 귀하가 이미 AWS의 다른 서비스들을 사용하고 있는 중이라면 다른 AWS의 서비스들은 이미 이러한 이   식을 진행하였기 때문에 귀하의 어플리케이션은 이미 ATS를 신뢰하고 있을 가능성이 높습니다. https://www.amazontrust.com/repository/를 방문하여 ATS에 대한 더 많은 정보들을 확인하십시오.
+> 이러한 변화에서 귀하의 어플리케이션이 정상 작동함을 보장하기 위해서는 귀하의 조치가 필요합니다. 귀하가 이미 AWS의 다른 서비스들을 사용하고 있는 중이라면 다른 AWS의 서비스들은 이미 이러한 이   식을 진행하였기 때문에 귀하의 어플리케이션은 이미 ATS를 신뢰하고 있을 가능성이 높습니다. [https://www.amazontrust.com/repository/](https://www.amazontrust.com/repository/)를 방문하여 ATS에 대한 더 많은 정보들을 확인하십시오.
 
 (중략)
 
-Frequently Asked Questions
+## Frequently Asked Questions
 
-Q1: What is changing?
+### Q1: What is changing?
+
 The Certificate Authority for Amazon S3 and Amazon CloudFront’s default certificates are changing from DigiCert to Amazon
 Trust Services. This change does not impact workloads that use HTTP only or use a custom TLS certificate. For S3, many
 regions already use Amazon Trust Services including all regional endpoints for the eu-west-3, eu-north-1, me-south-1, ap-
 northeast-3, ap-east-1, and us-gov-east-1 regions. S3 will be migrating the remaining AWS Regions to Amazon Trust Services
 as well. For CloudFront, all edge location endpoints will be migrating to Amazon Trust Services.
 
-Q2: When are these changes occurring?
+### Q2: When are these changes occurring?
+
 The changes in Certificate Authority will begin rolling out on March 23, 2021.
 
-Q3: What do I need to do?
+### Q3: What do I need to do?
+
 Check your client certificate trust store to see if it already trusts Amazon Trust Services’ root certificates. If it does no further
 action is needed. If it does not trust Amazon Trust Services, perform one of the following actions. Resolution option 1, update
 your client certificate trust store to include all of Amazon Trust Services’ root certificates. Resolution option 2, change the
 domain name your application requests to a CloudFront Alternative Domain Name (CNAME) that uses an TLS certificate from
 an already trusted Certificate Authority.
 
-Q4: How do I test if my application trust Amazon Trust Services?
+### Q4: How do I test if my application trust Amazon Trust Services?
+
 You can verify your application trusts Amazon Trust Services by performing one of the following tests from within your
 application. Test option 1, fetch the object https://s3-ats-migration-test.s3.eu-west-3.amazonaws.com/test.jpg and verify a
 200 response or that you see the green check mark in the test image. Test option 2, create an S3 bucket in your AWS account
 in any of the following regions (eu-west-3, eu-north-1, me-south-1, ap-northeast-3, ap-east-1, and us-gov-east-1) and fetch a
 test object over HTTPS.
 
-Q5: What root certificates are part of Amazon Trust Services?
+### Q5: What root certificates are part of Amazon Trust Services?
+
 Refer to https://www.amazontrust.com/repository/
 
-Q6: What happens after March 23, 2021 if my clients do not trust Amazon Trust Services’ Certificate Authorities?
+### Q6: What happens after March 23, 2021 if my clients do not trust Amazon Trust Services’ Certificate Authorities?
+
 All client HTTPS requests made to a default Amazon S3 or Amazon CloudFront endpoint will receive the services’ default
 certificate issued from Amazon Trust Services. If the client trust store does not trust the Certificate Authority, it will report
 the TLS certificate as “untrusted” and may close the connection.
