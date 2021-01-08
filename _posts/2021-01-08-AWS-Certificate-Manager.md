@@ -91,6 +91,10 @@ the TLS certificate as “untrusted” and may close the connection.
 Sincerely,
 Amazon Web Services
 
+*****
+
+메일을 읽으면서 다시 짚고 넘어가고 싶었던 개념이 많았지만, 이번 포스트는 AWS Certificate Manger에 대해서 서술한다.
+
 # AWS Certificate Manager
 
 ## Amazon Trust Service
