@@ -27,3 +27,40 @@ Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 
 # AWS Outposts
 
 이번 포스트에서는 [AWS Outpost](https://aws.amazon.com/outposts/)에 대해서 다룬다.
+
+> *outpost 1. (군대의) 전초 기지 2. 벽지의 소도시, 외딴 곳에 있는 건물들*
+
+## 개요
+
+AWS Outpost는 AWS 인프라와 서비스, API, 관리 도구 등을 데이터센터 같은 On-premise 시설에 제공하여 하이브리드 클라우드 경험을 제공하는 것이라고 하는데
+AWS으로부터 42U 규격의 표준 서버를 1에서 96랙까지 대여하는 서비스이다.
+
+> 2021년부터는 더 작은 폼팩터 단위로도 대여해준다고 한다.
+
+## 왜 On-premise 시스템을 구축하는 것인가?
+
+### Low-latency compute
+
+### Local data processing
+
+### Data residency
+
+### Migration & Modernization
+
+## 왜 AWS Outpost 인가?
+
+### Run AWS Services on premises
+
+### Store and process data on premises
+
+### Truly consistent hybrid experience
+
+### Fully managed infrastructure
+
+## 기능
+
+## 사용 예시
+
+## 비용 
+
+## 자주 물어보는 질문들
