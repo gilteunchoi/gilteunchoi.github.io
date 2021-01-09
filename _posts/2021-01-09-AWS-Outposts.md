@@ -26,13 +26,13 @@ Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 
 
 # AWS Outposts
 
-[AWS Outpost](https://aws.amazon.com/outposts/)는 AWS가 제공하는 하이브리드 클라우드 컴퓨팅 솔루션으로, AWS으로부터 42U 규격의 표준 서버를 1에서 96랙까지 대여하는 서비스이다. 
+> *outpost 1. (군대의) 전초 기지 2. 벽지의 소도시, 외딴 곳에 있는 건물들*
+
+[AWS Outpost](https://aws.amazon.com/outposts/)는 AWS가 제공하는 하이브리드 클라우드 컴퓨팅 솔루션으로, AWS으로부터 42U 규격의 표준 서버를 1에서 96랙까지 대여받는 서비스이다. 
 2021년부터는 더 작은 폼팩터 단위로도 대여가 가능할 것이라고 한다. 하드웨어와 소프트웨어를 같이 제공하며, 이 둘을 개별적으로 구매하거나 대여할 수 없다. 
 
 AWS Outpost는 상위 AWS 리전에 의존하여 근처의 AWS 리전과 상시 연결되어 있어야 하며 별도의 오프라인 서비스는 제공하지 않는다. 
 연결이 제한되거나 없는 환경에서 작동하도록 최적화된 [AWS Snowball Edge](https://aws.amazon.com/ko/snowball/)가 존재한다.
-
-> *outpost 1. (군대의) 전초 기지 2. 벽지의 소도시, 외딴 곳에 있는 건물들*
 
 AWS Outposts 서비스를 지원하는 지역은 다음과 같다.
 
@@ -44,13 +44,12 @@ AWS Outposts 서비스를 지원하는 지역은 다음과 같다.
 
 > 남아메리카 - 브라질
 
-
 ## On-premise 시스템을 구축하는 이유
 
 ### 1. 지연시간
 
 실시간 멀티플레이어 게임과 같은 낮은 지연 시간을 요하는 어플리케이션은 물리적인 한계가 있다.
-AWS의 가까운 퍼블릭 클라우드 서비스가 이를 충족하지 못한다면, AWS Outpost가 대안이 될 것이다.
+AWS의 가까운 퍼블릭 클라우드 서비스가 이를 충족하지 못한다면 AWS Outpost가 대안이 될 것이다.
 
 ### 2. 로컬 데이터 처리
 
