@@ -1,0 +1,27 @@
+---
+title: "AWS Outposts"
+date: 2021-01-09 19:59:30 +0900
+toc: true
+toc_sticky: true
+categories: AWS
+---
+
+Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 작성하는 포스트입니다.
+
+*****
+
+[Amazon Web Serviecs 개요](https://d1.awsstatic.com/International/ko_KR/whitepapers/aws-overview.pdf)에서는 
+클라우드와 하이브리드, On-premise 세 가지의 클라우드 컴퓨팅 배포 모델을 제안하고 있다.
+
+> 코카콜라의 경쟁 상대는 다른 음료수가 아니라 물이다. 음료수 시장에서 40%의 점유율을 차지하고 있는 독보적인 1위지만 
+  전체 물 시장에서는 고작 3%를 차지하고 있을 뿐이다. - 코카콜라 前 CEO 로베르토 고이주에타
+
+코카콜라가 노는 물은 음료 시장이 아니라 '마실 것' 시장이라는 이야기다. 대단한 배포가 아닐 수 없다. 
+
+이 이야기를 컴퓨팅 시장에도 적용시켜 본다면, AWS 클라우드의 진정한 경쟁 상대는 On-premise 시스템일 것이다. 
+그런데 이러한 클라우드 컴퓨팅의 개념에 반하는 On-premise 솔루션을 AWS는 제공하고 있다. 
+물리적인 한계를 뛰어넘을 수 없기 때문이겠지만, AWS의 솔루션들 중에서는 조금 따로 노는 듯한 느낌이 든다.
+
+이번 포스트에서는 [AWS Outpost](https://aws.amazon.com/outposts/)에 대해서 다룬다.
+
+# AWS Outposts
