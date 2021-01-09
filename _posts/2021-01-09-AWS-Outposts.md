@@ -22,6 +22,8 @@ Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 
 그런데 이러한 클라우드 컴퓨팅의 개념에 반하는 On-premise 솔루션을 AWS는 제공하고 있다. 
 물리적인 한계를 뛰어넘을 수 없기 때문이겠지만, AWS의 솔루션들 중에서는 조금 따로 노는 듯한 느낌이 든다.
 
-이번 포스트에서는 [AWS Outpost](https://aws.amazon.com/outposts/)에 대해서 다룬다.
+<a href="https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/" title="Infographic: Amazon Leads $100 Billion Cloud Market | Statista"><img src="https://cdn.statcdn.com/Infographic/images/normal/18819.jpeg" alt="Infographic: Amazon Leads $100 Billion Cloud Market | Statista" width="50%" height="auto" style="width: 100%; height: auto !important; max-width:960px;-ms-interpolation-mode: bicubic;"/><br/></a> *2020년 2분기 클라우드 컴퓨팅 시장 점유율* <a href="https://www.statista.com/chartoftheday/">- Statista</a>
 
 # AWS Outposts
+
+이번 포스트에서는 [AWS Outpost](https://aws.amazon.com/outposts/)에 대해서 다룬다.
