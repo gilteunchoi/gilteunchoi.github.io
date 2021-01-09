@@ -27,35 +27,26 @@ Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 
 # AWS Outposts
 
 이번 포스트에서는 [AWS Outpost](https://aws.amazon.com/outposts/)에 대해서 다룬다.
+AWS Outpost는 AWS으로부터 42U 규격의 표준 서버를 1에서 96랙까지 대여하는 서비스이다. 2021년부터는 더 작은 폼팩터 단위로도 대여해준다고 한다.
 
 > *outpost 1. (군대의) 전초 기지 2. 벽지의 소도시, 외딴 곳에 있는 건물들*
 
-## 개요
+## 왜 On-premise 시스템을 구축하는 이유
 
-AWS Outpost는 AWS 인프라와 서비스, API, 관리 도구 등을 데이터센터 같은 On-premise 시설에 제공하여 하이브리드 클라우드 경험을 제공하는 것이라고 하는데
-AWS으로부터 42U 규격의 표준 서버를 1에서 96랙까지 대여하는 서비스이다.
+### 지연시간
 
-> 2021년부터는 더 작은 폼팩터 단위로도 대여해준다고 한다.
+실시간 멀티플레이어 게임과 같은 낮은 지연 시간을 요하는 어플리케이션은 물리적인 한계가 있다.
+AWS의 가까운 퍼블릭 클라우드 서비스가 이를 충족하지 못한다면, AWS Outpost가 대안이 될 것이다.
 
-## 왜 On-premise 시스템을 구축하는 것인가?
+### 로컬 데이터 처리
 
-### Low-latency compute
+처리하는 데이터의 크기가 크다면, 이를 클라우드로 이식하는데 한계가 존재한다.
 
-### Local data processing
+### 데이터 상주
 
-### Data residency
+데이터가 특정 장소나 국가를 벗어날 수 없는 경우에도 On-premise 시스템을 사용해야 한다.
 
-### Migration & Modernization
-
-## 왜 AWS Outpost 인가?
-
-### Run AWS Services on premises
-
-### Store and process data on premises
-
-### Truly consistent hybrid experience
-
-### Fully managed infrastructure
+> 한국의 예시로는『공간정보의 구축 및 관리 등에 관한 법률』 제16조(기본측량성과의 국외 반출 금지), 제21조(공공측량성과의 국외 반출 금지)에 따라 측량성과의 국외반출이 금지되어 있다.
 
 ## 기능
 
