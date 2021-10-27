@@ -6,7 +6,7 @@ toc_sticky: true
 categories: Story
 ---
 
-### 좋은 글을 쓰는 것은 너무나 어렵다. 
+### 좋은 글을 쓰는 것은 너무나 어렵다
 
 *****
 
