@@ -12,16 +12,7 @@ Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 
 
 [Amazon Web Serviecs 개요](https://d1.awsstatic.com/International/ko_KR/whitepapers/aws-overview.pdf)에서는 
 클라우드와 하이브리드, On-premise 세 가지의 클라우드 컴퓨팅 배포 모델을 제안하고 있다.
-
-관련 글을 읽으면서 떠오른 말이 있다.
-
-> 코카콜라의 경쟁 상대는 다른 음료수가 아니라 물이다. 음료수 시장에서 40%의 점유율을 차지하고 있는 독보적인 1위지만 
-  전체 물 시장에서는 고작 3%를 차지하고 있을 뿐이다. - 코카콜라 前 CEO 로베르토 고이주에타
-
-코카콜라가 노는 물은 음료 시장이 아니라 '마실 것'시장이라는 이야기다.
-
-이 이야기를 컴퓨팅 시장에도 적용시켜 본다면, AWS 클라우드의 진정한 경쟁 상대는 On-premise 시스템일 것이다.
-그래서 AWS가 추구하는 방향이 Off-premise 시스템이고 AWS의 미래는 개인 컴퓨터의 클라우드화라고 생각했기에 클라우드 컴퓨팅의 개념에 반하는 Outposts는 AWS의 솔루션들 중에서는 조금 따로 노는 듯한 느낌이 들었다.
+완전한 클라우드 컴퓨팅의 개념에 반하는 AWS Outposts는 AWS의 솔루션들 중에서 조금 따로 노는 듯한 느낌이 든다.
 
 <a href="https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/" title="Infographic: Amazon Leads $100 Billion Cloud Market | Statista"><img src="https://cdn.statcdn.com/Infographic/images/normal/18819.jpeg" alt="Infographic: Amazon Leads $100 Billion Cloud Market | Statista" width="50%" height="auto" style="width: 100%; height: auto !important; max-width:960px;-ms-interpolation-mode: bicubic;"/><br/></a> *2020년 2분기 클라우드 컴퓨팅 시장 점유율* <a href="https://www.statista.com/chartoftheday/">- Statista</a>
 
@@ -35,7 +26,7 @@ Amazon Web Services의 Solutions Architect Associate 자격증 준비를 하며 
 AWS Outpost는 상위 AWS 리전에 의존하여 근처의 AWS 리전과 상시 연결되어 있어야 하며 별도의 오프라인 서비스는 제공하지 않는다. 
 연결이 제한되거나 없는 환경에서 작동하도록 최적화된 [AWS Snowball Edge](https://aws.amazon.com/ko/snowball/)가 존재한다.
 
-AWS Outposts 서비스를 지원하는 지역은 다음과 같다.
+21년 1월 AWS Outposts 서비스를 지원하는 지역은 다음과 같다.
 
 > 북아메리카 - 미국, 캐나다, 멕시코
 
@@ -58,7 +49,7 @@ AWS의 가까운 퍼블릭 클라우드 서비스가 이를 충족하지 못한�
 
 ### 3. 데이터 상주
 
-데이터가 특정 장소나 국가를 벗어날 수 없는 경우에도 On-premise 시스템을 사용해야 한다. 한국은『공간정보의 구축 및 관리 등에 관한 법률』 제16조(기본측량성과의 국외 반출 금지), 제21조(공공측량성과의 국외 반출 금지)에 따라 측량성과의 국외반출이 금지되어 있는데, 한국의 경우 아시아 태평양 (서울) 리전이 있어 이 목적으로는 AWS Outpost를 설치하지 않아도 된다.
+데이터가 특정 장소나 국가를 벗어날 수 없는 경우에도 On-premise 시스템을 사용해야 한다. 한국은『공간정보의 구축 및 관리 등에 관한 법률』 제16조(기본측량성과의 국외 반출 금지), 제21조(공공측량성과의 국외 반출 금지)에 따라 측량성과의 국외반출이 금지되어 있는데, 한국의 경우 아시아 태평양 (서울) 리전이 있어 관련된 사업을 위해서는 해당 리전에 서버를 구축하거나, 국내에 AWS Outpost를 설치하여야 한다.
 
 ## 비용 
 
