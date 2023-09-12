@@ -20,14 +20,15 @@ title_separator          : "-"
 subtitle                 : "문제해결형 개발자의 기술 블로그"
 name                     : "Gilteun Choi"
 description              : ""
+
 url                      : "https://gilteunchoi.github.io"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/logo.jpg"
+logo                     : "/assets/images/logo_nobg.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 100
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -96,6 +97,7 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Software Engineer @캐치테이블"
   location         : "경기도 성남시, 판교"
+
   links:    
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -103,9 +105,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/gilteunchoi"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/gilteun/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/gilteun/"
@@ -113,24 +112,12 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/gilteunchoi"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/gilteun/"
 
 
 # Reading Files
