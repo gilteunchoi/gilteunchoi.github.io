@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gilteunchoi.github.io/sitemap.xml
